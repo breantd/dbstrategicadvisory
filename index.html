@@ -322,6 +322,7 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 <div class="mob-menu" id="mob">
   <a href="#about">About</a><a href="#services">Services</a><a href="#career">Career</a>
   <a href="#articles">Insights</a><a href="#newsletter">Newsletter</a><a href="#contact">Contact</a>
+  <a href="#" id="cv-btn-mob" style="color:var(--blue);font-weight:600">Download CV</a>
 </div>
 <style>
 /* HERO V6 OVERRIDES */
@@ -1133,7 +1134,7 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
     <div id="c-ok">Thank you. Your message has been received &mdash; Didier will be in touch shortly.</div>
   </div>
   <div class="c-info">
-    <div><div class="ci-lbl">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection#5e3c2c3b3f302a3a1e273f363131703d3133"><span class="__cf_email__" data-cfemail="0664746367687262467f676e69692865696b">[email&#160;protected]</span></a></div></div>
+    <div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:breantd@yahoo.com">breantd@yahoo.com</a></div></div>
     <div><div class="ci-lbl">Phone</div><div class="ci-val">+44 790 410 9857</div></div>
     <div><div class="ci-lbl">Base</div><div class="ci-val">London, United Kingdom</div></div>
     <div><div class="ci-lbl">LinkedIn</div><div class="ci-val"><a href="https://www.linkedin.com/in/didier-breant-b032a4117" target="_blank" rel="noopener">linkedin.com/in/didierbreant</a></div></div>
@@ -1240,6 +1241,7 @@ function cvDownload(e) {
 }
 document.getElementById('cv-btn').addEventListener('click', cvDownload);
 document.getElementById('cv-btn2').addEventListener('click', cvDownload);
+document.getElementById('cv-btn-mob').addEventListener('click', cvDownload);
 
 // NEWSLETTER
 document.getElementById('nl-btn').addEventListener('click', function() {
@@ -1254,11 +1256,30 @@ document.getElementById('nl-btn').addEventListener('click', function() {
 document.getElementById('c-send').addEventListener('click', function() {
   var n = document.getElementById('c-name').value.trim();
   var e = document.getElementById('c-email').value.trim();
+  var o = document.getElementById('c-org').value.trim();
+  var m = document.getElementById('c-msg').value.trim();
   if (!n || !e) return;
-  document.querySelectorAll('.c-form input, .c-form textarea, #c-send').forEach(function(el) {
-    el.style.display = 'none';
+  var btn = document.getElementById('c-send');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  fetch('https://formspree.io/f/xeevnqzw', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ name: n, email: e, organisation: o, message: m })
+  }).then(function(r) {
+    if (r.ok) {
+      document.querySelectorAll('.c-form input, .c-form textarea, #c-send').forEach(function(el) { el.style.display = 'none'; });
+      document.getElementById('c-ok').style.display = 'block';
+    } else {
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      alert('Something went wrong. Please email breantd@yahoo.com directly.');
+    }
+  }).catch(function() {
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+    alert('Something went wrong. Please email breantd@yahoo.com directly.');
   });
-  document.getElementById('c-ok').style.display = 'block';
 });
 
 // FADE IN ON SCROLL
