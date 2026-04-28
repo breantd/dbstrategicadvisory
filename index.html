@@ -862,6 +862,20 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 </div>
 <div class="art-grid fade">
 
+  <div class="art-card" onclick="openArt('hfir')">
+    <div class="art-img-wrap">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80&fit=crop" alt="Hedge Fund Institutional Readiness" loading="lazy">
+      <div class="art-img-overlay"></div>
+      <span class="art-img-tag">Institutional &middot; Framework</span>
+    </div>
+    <div class="art-top">
+      <div class="art-date">April 2026</div>
+      <h3 class="art-title">Hedge Fund Institutional Readiness</h3>
+      <p class="art-exc">DDQ standards, ODD process, LP universe mapping, and a readiness checklist. A practical framework for managers seeking institutional capital.</p>
+    </div>
+    <div class="art-foot"><a href="#" class="art-read" onclick="event.preventDefault();openArt('hfir')">Read Article</a><span class="art-fmt">Framework</span></div>
+  </div>
+
   <div class="art-card" onclick="openArt('fw')">
     <div class="art-img-wrap">
       <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80&fit=crop" alt="Framework" loading="lazy">
@@ -934,6 +948,508 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 
 </div>
 </section>
+<div class="art-modal" id="modal-hfir">
+<div class="am-box" style="max-width:900px">
+  <div class="am-head">
+    <button class="am-close" onclick="closeArt('hfir')">&#215;</button>
+    <span class="am-tag">Institutional &middot; Framework &middot; April 2026</span>
+    <h2 class="am-title">Hedge Fund Institutional Readiness</h2>
+    <p style="font-size:.83rem;color:var(--muted);margin-top:.5rem;font-style:italic">A Practical Framework for Managers Seeking Institutional Capital &mdash; DDQ Standards &nbsp;|&nbsp; ODD Process &nbsp;|&nbsp; LP Universe &nbsp;|&nbsp; Readiness Checklist</p>
+  </div>
+  <div class="am-body">
+
+    <h2>Scope and Purpose</h2>
+    <p>This document addresses the five dimensions of institutional readiness that determine whether a hedge fund can successfully access and retain institutional capital. It is structured as a practical working reference for managers preparing for institutional allocator engagement, and for advisors supporting that process.</p>
+
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">#</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Section</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Core Question Addressed</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--mid)">1</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">DDQ Bank &amp; LP Diligence Expectations</td><td style="padding:.55rem .9rem;color:var(--mid)">What will LPs ask, and what constitutes a decision-critical response?</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--mid)">2</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">ODD Process Walkthrough</td><td style="padding:.55rem .9rem;color:var(--mid)">How does operational due diligence actually work, end to end?</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--mid)">3</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">LP Universe Mapping</td><td style="padding:.55rem .9rem;color:var(--mid)">Who allocates to hedge funds, and which LPs are accessible to emerging managers?</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--mid)">4</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Institutional-Readiness Checklist</td><td style="padding:.55rem .9rem;color:var(--mid)">What infrastructure and governance must be in place before approaching institutional capital?</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--mid)">5</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Emerging vs. Established Managers</td><td style="padding:.55rem .9rem;color:var(--mid)">Where do standards differ, and where is the bar the same regardless of scale?</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Scope: US and European institutional LP universe. Regulatory references reflect SEC/Form ADV (US) and FCA/AIFMD (UK/EU) frameworks. AIMA DDQ standards apply throughout as the hedge fund industry benchmark; ILPA DDQ references apply where PE-adjacent investors are relevant.</p>
+
+    <h2>Section 1: DDQ Bank &amp; LP Diligence Expectations</h2>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">1.1 &nbsp;Industry Framework</h2>
+    <p>For hedge funds, the AIMA (Alternative Investment Management Association) DDQ is the de facto industry standard. First published in 1997 and updated regularly, it is used by institutional LPs globally as a starting template. AIMA&rsquo;s membership includes managers overseeing approximately $2.5 trillion in assets. The March 2025 update introduced expanded modules covering AI governance, cybersecurity resilience, and ESG disclosures.</p>
+    <p>Two frameworks matter for hedge funds with a broader institutional LP target:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li><strong>AIMA DDQ</strong> &mdash; hedge fund standard. Modular structure covering investment process, operations, risk, compliance, governance, and reporting.</li>
+      <li><strong>ILPA DDQ v2.0</strong> &mdash; primary PE framework (21 modules), relevant where pension consultants or FOFs run hybrid evaluation processes across asset classes.</li>
+    </ul>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">1.2 &nbsp;DDQ Structure: Core Modules</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Module</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Content</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Primary Evaluator</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Firm &amp; Ownership</td><td style="padding:.55rem .9rem;color:var(--mid)">Entity structure, ownership, key persons, AUM history</td><td style="padding:.55rem .9rem;color:var(--mid)">Investment / ODD teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Investment Strategy</td><td style="padding:.55rem .9rem;color:var(--mid)">Philosophy, process, edge articulation, capacity constraints</td><td style="padding:.55rem .9rem;color:var(--mid)">Portfolio managers / CIOs</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Track Record</td><td style="padding:.55rem .9rem;color:var(--mid)">Performance attribution, drawdown analysis, peer benchmarking</td><td style="padding:.55rem .9rem;color:var(--mid)">Investment analysts</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Risk Management</td><td style="padding:.55rem .9rem;color:var(--mid)">Risk framework, limits, VaR/stress testing, tail risk controls</td><td style="padding:.55rem .9rem;color:var(--mid)">Risk / Investment teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Portfolio Management</td><td style="padding:.55rem .9rem;color:var(--mid)">Position sizing, liquidity management, concentration limits</td><td style="padding:.55rem .9rem;color:var(--mid)">Portfolio managers</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Valuation Policy</td><td style="padding:.55rem .9rem;color:var(--mid)">Pricing sources, independent verification, Level 2/3 assets</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Operations &amp; Middle Office</td><td style="padding:.55rem .9rem;color:var(--mid)">Trade lifecycle, reconciliation, NAV process, error handling</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Service Providers</td><td style="padding:.55rem .9rem;color:var(--mid)">Prime broker(s), administrator, auditor, legal counsel</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Compliance &amp; Regulation</td><td style="padding:.55rem .9rem;color:var(--mid)">Registration, CCO, personal trading, AML/KYC, surveillance</td><td style="padding:.55rem .9rem;color:var(--mid)">Compliance / ODD teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Technology &amp; Cyber</td><td style="padding:.55rem .9rem;color:var(--mid)">OMS/PMS, data security, BCP/DR, incident response</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD / Technology teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Governance</td><td style="padding:.55rem .9rem;color:var(--mid)">IC structure, conflicts policy, succession, investor protections</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD / Investment teams</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Investor Reporting</td><td style="padding:.55rem .9rem;color:var(--mid)">Frequency, format, attribution methodology, audit process</td><td style="padding:.55rem .9rem;color:var(--mid)">IR / ODD teams</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">ESG (increasingly)</td><td style="padding:.55rem .9rem;color:var(--mid)">Policy, integration, reporting framework (SFDR/TCFD where applicable)</td><td style="padding:.55rem .9rem;color:var(--mid)">ESG / ODD teams</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">1.3 &nbsp;Gatekeeper Questions &mdash; Decision-Critical Shortlist</h2>
+    <p>The following fifteen questions consistently determine whether a DDQ advances or stalls. These are the areas where allocators report the highest rejection rate, and where ODD teams flag supplementary requests most frequently. A weak, vague, or inconsistent answer to any of these is typically sufficient to halt diligence.</p>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500">#</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Gatekeeper Question</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Why It Is Decision-Critical</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">1</td><td style="padding:.55rem .9rem;color:var(--dark)">Who owns and controls the management company, and are there any side arrangements with key personnel?</td><td style="padding:.55rem .9rem;color:var(--mid)">Conflict detection and alignment of interest. Undisclosed arrangements are a red flag for fraud risk.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">2</td><td style="padding:.55rem .9rem;color:var(--dark)">Describe the investment edge in one paragraph. What generates alpha and why is it durable?</td><td style="padding:.55rem .9rem;color:var(--mid)">Tests whether the strategy is coherent and differentiated, or generic. Vague answers lose allocations silently.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">3</td><td style="padding:.55rem .9rem;color:var(--dark)">How is performance attributed across portfolio managers and strategies? Provide a detailed breakdown.</td><td style="padding:.55rem .9rem;color:var(--mid)">Reveals whether returns are repeatable and concentrated or diversified. Key-person risk surfaces here.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">4</td><td style="padding:.55rem .9rem;color:var(--dark)">What is the valuation policy for illiquid or hard-to-price positions? Who has final sign-off?</td><td style="padding:.55rem .9rem;color:var(--mid)">Valuation fraud (Madoff, Weavering) originates here. Independent pricing and documented sign-off are mandatory.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">5</td><td style="padding:.55rem .9rem;color:var(--dark)">Who are your prime brokers, and what is your exposure and collateral arrangement with each?</td><td style="padding:.55rem .9rem;color:var(--mid)">Counterparty risk and leverage visibility. Multiple PBs are expected above a certain AUM threshold.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">6</td><td style="padding:.55rem .9rem;color:var(--dark)">Who is the fund administrator, and what is the scope of their NAV calculation role?</td><td style="padding:.55rem .9rem;color:var(--mid)">Independent NAV verification is non-negotiable. Self-administration is a near-automatic veto.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">7</td><td style="padding:.55rem .9rem;color:var(--dark)">How are trade errors, breaches, and limit violations identified, escalated, and resolved?</td><td style="padding:.55rem .9rem;color:var(--mid)">Tests control culture. A fund that claims zero errors is treated as having poor detection, not clean operations.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">8</td><td style="padding:.55rem .9rem;color:var(--dark)">Describe your redemption and gate policy, and how it has been applied historically.</td><td style="padding:.55rem .9rem;color:var(--mid)">Liquidity mismatch risk. Side pockets and gate history must be fully disclosed.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">9</td><td style="padding:.55rem .9rem;color:var(--dark)">How is the compliance programme structured? Who is the CCO and what is their reporting line?</td><td style="padding:.55rem .9rem;color:var(--mid)">Regulatory risk and control independence. CCO reporting to the CIO is viewed as a conflict.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">10</td><td style="padding:.55rem .9rem;color:var(--dark)">Describe your cybersecurity framework and most recent penetration test findings.</td><td style="padding:.55rem .9rem;color:var(--mid)">Now standard following SEC cybersecurity rules and FCA guidance. Absence of testing is a flag.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">11</td><td style="padding:.55rem .9rem;color:var(--dark)">What is the key-person policy, including succession and continuity arrangements?</td><td style="padding:.55rem .9rem;color:var(--mid)">Single-point-of-failure risk. No documented succession plan signals operational immaturity.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">12</td><td style="padding:.55rem .9rem;color:var(--dark)">Are there any pending regulatory investigations, litigation, or material complaints?</td><td style="padding:.55rem .9rem;color:var(--mid)">Mandatory disclosure. Any omission discovered post-allocation is treated as a deliberate misrepresentation.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .7rem;color:var(--muted)">13</td><td style="padding:.55rem .9rem;color:var(--dark)">Provide a full schedule of fees, including any arrangements outside the standard management and performance fee.</td><td style="padding:.55rem .9rem;color:var(--mid)">Fee transparency, including pass-throughs, expense caps, and any related-party arrangements.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .7rem;color:var(--muted)">14</td><td style="padding:.55rem .9rem;color:var(--dark)">Have you ever suspended redemptions, imposed gates, or created side pockets? If so, describe the circumstances.</td><td style="padding:.55rem .9rem;color:var(--mid)">Investor protection and liquidity history. LPs cross-reference this against reported facts.</td></tr>
+          <tr><td style="padding:.55rem .7rem;color:var(--muted)">15</td><td style="padding:.55rem .9rem;color:var(--dark)">What is your AUM capacity for this strategy, and how does current AUM compare to that estimate?</td><td style="padding:.55rem .9rem;color:var(--mid)">Capacity management and scalability. Vague answers suggest the fund has not stress-tested its strategy limits.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">1.4 &nbsp;DDQ Execution: Common Failure Modes</h2>
+    <p>Based on industry practice, DDQ failures cluster into four patterns:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li><strong>Inconsistency across materials</strong> &mdash; DDQ answers contradict the pitch deck, Form ADV, or prior investor letters. LPs do not raise these discrepancies; they record them and reduce conviction.</li>
+      <li><strong>Generic responses</strong> &mdash; answers that could apply to any fund rather than specifically to this fund&rsquo;s strategy, team, and controls. Particularly damaging in the valuation, risk, and compliance modules.</li>
+      <li><strong>IR-only authorship</strong> &mdash; responses drafted by IR without functional sign-off from the risk manager, CCO, or COO. Inaccuracies surface during ODD and damage credibility disproportionately to their materiality.</li>
+      <li><strong>Stale documentation</strong> &mdash; DDQ submitted with outdated service provider details, prior-year audit references, or historical org charts. Signals poor IR housekeeping.</li>
+    </ul>
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Source basis: AIMA DDQ framework (aima.org); SBAI ODD survey 2024; Collateral Partners DDQ best practice analysis (April 2026); industry practice standards from AIMA, ILPA, and PRI frameworks.</p>
+
+    <h2>Section 2: ODD Process Walkthrough</h2>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.1 &nbsp;What ODD Is and Who Conducts It</h2>
+    <p>Operational Due Diligence (ODD) is the formal process by which institutional allocators assess all non-investment aspects of a hedge fund before committing capital. It evaluates operational integrity, internal controls, governance, service provider quality, and regulatory standing. The ODD team typically holds veto power over an allocation regardless of the investment team&rsquo;s conviction.</p>
+    <p>ODD is conducted by:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Internal ODD teams at large pension funds, endowments, and sovereign wealth funds</li>
+      <li>External ODD providers mandated by allocators who lack internal capacity (perfORM, Albourne Partners, KPMG, EY, and smaller specialists)</li>
+      <li>Fund-of-funds operational teams, which conduct ODD as a core part of their manager selection process</li>
+    </ul>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.2 &nbsp;End-to-End ODD Process: Stages</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Stage</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Description</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Typical Duration</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">1. Initial Screening</td><td style="padding:.55rem .9rem;color:var(--mid)">Investment team advances a manager. ODD team receives referral, reviews basic public information (ADV, website, prior DDQ if available), screens for red flags before committing resource.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">1&ndash;2 weeks</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">2. Document Request</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD team issues a comprehensive document request list covering governance, operations, compliance, service providers, regulatory filings, and fund documents. See Section 2.3 for typical scope.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">2&ndash;4 weeks for manager to respond</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">3. Desktop Review</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD analysts review all submitted documents. Assess consistency, completeness, and adequacy of controls. Generate questions for follow-up and prioritise areas for onsite focus.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">2&ndash;4 weeks</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">4. Onsite Visit</td><td style="padding:.55rem .9rem;color:var(--mid)">1&ndash;2 day visit to manager&rsquo;s offices. Interviews with CEO/CIO, COO, CFO, CCO, risk manager, and operations team. System demonstrations, process walkthroughs, and office environment assessment.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">1&ndash;2 days onsite; scheduling lead time 2&ndash;4 weeks</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">5. Third-Party Verification</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD team directly contacts prime brokers, fund administrator, auditor, and legal counsel to verify key facts and test consistency with manager&rsquo;s representations.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">1&ndash;2 weeks concurrent with report drafting</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">6. Background Checks</td><td style="padding:.55rem .9rem;color:var(--mid)">Entity and individual background checks on key personnel (civil litigation, regulatory history, criminal records, professional sanctions, reputational checks).</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">1&ndash;2 weeks</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">7. ODD Report Drafting</td><td style="padding:.55rem .9rem;color:var(--mid)">Internal report produced covering all workstreams. Red, amber, green risk ratings by category. Final recommendation: invest, conditional invest, or do not invest.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">2&ndash;3 weeks</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">8. Investment Committee</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD report presented alongside investment case. ODD team may attend IC to address questions. Veto right exercised if material concerns remain unresolved.</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">Varies by allocator governance</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">9. Ongoing Monitoring</td><td style="padding:.55rem .9rem;color:var(--mid)">Post-investment: annual re-review, ad hoc ODD triggered by material events (personnel departures, regulatory actions, prime broker changes, significant drawdowns).</td><td style="padding:.55rem .9rem;color:var(--mid);white-space:nowrap">Ongoing</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.3 &nbsp;Typical Document Request List</h2>
+    <p>The following categories are standard across institutional ODD processes. Missing or incomplete responses in any category typically trigger supplementary requests and extend the timeline.</p>
+    <p><strong>Legal &amp; Structure</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Offering memorandum (most recent version)</li>
+      <li>Limited partnership agreement / subscription documents</li>
+      <li>Organisational chart (management company and fund entities)</li>
+      <li>Side letter register (redacted as necessary, but existence disclosed)</li>
+      <li>Form ADV Parts 1 and 2 (US) / AIFMD Annex IV filings (EU/UK) / FCA register</li>
+    </ul>
+    <p><strong>Operations &amp; Controls</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>NAV calculation policy and procedures</li>
+      <li>Reconciliation procedures (trade, cash, position)</li>
+      <li>Trade order management workflow documentation</li>
+      <li>Error and breach log (last 24 months minimum)</li>
+      <li>Business continuity and disaster recovery plan</li>
+      <li>Cybersecurity policy and most recent penetration test summary</li>
+    </ul>
+    <p><strong>Valuation</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Formal valuation policy (including pricing hierarchy and Level 2/3 treatment)</li>
+      <li>Valuation committee charter and minutes (if applicable)</li>
+      <li>Evidence of independent pricing source usage</li>
+    </ul>
+    <p><strong>Compliance &amp; Regulatory</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Compliance manual / policies and procedures</li>
+      <li>Personal account dealing policy</li>
+      <li>AML/KYC procedures</li>
+      <li>Most recent regulatory examination correspondence (if any)</li>
+      <li>Litigation and regulatory investigation disclosure</li>
+    </ul>
+    <p><strong>Service Providers</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Prime brokerage agreements (main terms; counterparty list)</li>
+      <li>Fund administration agreement and scope of services</li>
+      <li>Audit engagement letter and most recent audited financial statements</li>
+      <li>Legal counsel details</li>
+    </ul>
+    <p><strong>Financials &amp; Governance</strong></p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Management company financial statements or evidence of financial stability</li>
+      <li>Key-person and succession policy</li>
+      <li>Conflicts of interest policy</li>
+      <li>Insurance coverage (E&amp;O, D&amp;O, cyber)</li>
+    </ul>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.4 &nbsp;Onsite Visit Agenda (Indicative)</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Time</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Session</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Key Areas Covered</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">09:00&ndash;09:30</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Introduction &amp; Firm Overview</td><td style="padding:.55rem .9rem;color:var(--mid)">CEO/CIO: history, team composition, ownership, strategic direction</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">09:30&ndash;11:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Investment Process Deep Dive</td><td style="padding:.55rem .9rem;color:var(--mid)">Portfolio manager(s): strategy, risk limits, position sizing, drawdown experience</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">11:00&ndash;12:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Risk Management</td><td style="padding:.55rem .9rem;color:var(--mid)">Risk manager: framework, VaR/stress testing, limit breaches, independent risk function</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">12:00&ndash;13:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Lunch / Informal</td><td style="padding:.55rem .9rem;color:var(--mid)">Relationship building; observation of team dynamics</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">13:00&ndash;14:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Operations &amp; Middle Office</td><td style="padding:.55rem .9rem;color:var(--mid)">COO/Head of Operations: trade lifecycle, reconciliation, error management, NAV process</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">14:00&ndash;15:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Compliance &amp; Legal</td><td style="padding:.55rem .9rem;color:var(--mid)">CCO: programme structure, surveillance, regulatory history, key-person arrangements</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">15:00&ndash;15:45</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Technology &amp; Cybersecurity</td><td style="padding:.55rem .9rem;color:var(--mid)">IT/OPS: OMS/PMS demonstration, cybersecurity controls, BCP walkthrough</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">15:45&ndash;16:30</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Finance &amp; Governance</td><td style="padding:.55rem .9rem;color:var(--mid)">CFO/COO: management company finances, investor protections, fee structure, auditor relationship</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--muted);white-space:nowrap">16:30&ndash;17:00</td><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Wrap-up &amp; Open Q&amp;A</td><td style="padding:.55rem .9rem;color:var(--mid)">ODD team raises any residual questions; manager has opportunity to address open points</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.5 &nbsp;ODD Red Flags</h2>
+    <p>The following are near-automatic veto triggers in institutional ODD processes:</p>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Category</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Red Flag</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Valuation</td><td style="padding:.55rem .9rem;color:var(--mid)">Self-administered NAV; no independent pricing for Level 2/3 assets; valuation policy not documented</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Valuation</td><td style="padding:.55rem .9rem;color:var(--mid)">Fund manager has discretion to override independent pricing without a formal, minuted process</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Service Providers</td><td style="padding:.55rem .9rem;color:var(--mid)">Unknown or sub-scale administrator; auditor lacks hedge fund experience or PCAOB registration</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Personnel</td><td style="padding:.55rem .9rem;color:var(--mid)">Undisclosed regulatory sanctions, litigation, or disciplinary history for key personnel</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Compliance</td><td style="padding:.55rem .9rem;color:var(--mid)">CCO reports to CIO; no dedicated compliance resource; compliance manual not reviewed in 2+ years</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Governance</td><td style="padding:.55rem .9rem;color:var(--mid)">No key-person policy or succession plan; founding PM controls all critical decisions without oversight</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Operations</td><td style="padding:.55rem .9rem;color:var(--mid)">Zero error/breach history reported; no documented escalation procedure</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Transparency</td><td style="padding:.55rem .9rem;color:var(--mid)">Refusal to disclose side letter existence; incomplete ADV; inconsistencies between DDQ and other materials</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Financial Stability</td><td style="padding:.55rem .9rem;color:var(--mid)">Management company with less than 12 months of operating runway on current fee base</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Liquidity</td><td style="padding:.55rem .9rem;color:var(--mid)">Strategy liquidity materially shorter than redemption terms; historical gate/suspension not proactively disclosed</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">2.6 &nbsp;ODD Report Structure (Indicative)</h2>
+    <p>ODD reports vary by provider but typically cover:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li>Executive Summary &mdash; recommendation (invest / conditional / do not invest) and primary rationale</li>
+      <li>Firm Background &mdash; ownership, history, key personnel assessment</li>
+      <li>Operational Risk Assessment &mdash; rated by workstream (RAG: Red / Amber / Green)</li>
+      <li>Service Provider Assessment &mdash; quality and independence of each counterparty</li>
+      <li>Compliance &amp; Regulatory Assessment &mdash; programme adequacy, regulatory history</li>
+      <li>Technology &amp; Cyber Assessment &mdash; infrastructure adequacy and risk</li>
+      <li>Open Items &amp; Conditions &mdash; any issues requiring resolution before or after investment</li>
+      <li>Background Check Findings &mdash; personnel and entity level</li>
+    </ul>
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Source basis: SBAI Guidance on Preparing for ODD; DiligenceVault ODD whitepaper (January 2026); Hedgeweek ODD operational considerations; perfORM Due Diligence Services methodology; JP Morgan 2019 Institutional Investor Survey (33% of allocators report rejecting managers on ODD grounds).</p>
+
+    <h2>Section 3: LP Universe Mapping</h2>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">3.1 &nbsp;Overview of the Institutional LP Landscape</h2>
+    <p>As of early 2024, US institutional investors alone allocate approximately $1.3 trillion to hedge funds: US pension funds account for roughly $618 billion, foundations approximately $545 billion, and college endowments approximately $141 billion (source: Alternative Fund Insight, February 2024). European institutional capital adds a further significant pool, dominated by pension funds, insurance companies, and sovereign wealth funds.</p>
+    <p>Allocation intentions for 2025 show divergence by LP type: pensions and insurance increased net allocation plans from 9% to 19%; endowments and foundations moved from +21% to +25% net; family offices anticipated a slight decline (source: Barclays Hedge Fund Outlook 2025). Private banks continue to represent the highest volume of allocations by number.</p>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">3.2 &nbsp;LP Segment Map</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500">LP Type</th>
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500;white-space:nowrap">Typical Ticket</th>
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500;white-space:nowrap">EM Fit</th>
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500">Access Model</th>
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500;white-space:nowrap">Diligence Depth</th>
+          <th style="padding:.6rem .7rem;text-align:left;font-weight:500">Key Constraint</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Large Public Pension (US)</td><td style="padding:.5rem .7rem;color:var(--mid)">$50&ndash;200M+</td><td style="padding:.5rem .7rem;color:var(--mid)">Low&ndash;Very Low</td><td style="padding:.5rem .7rem;color:var(--mid)">Consultant-intermediated; RFP process</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD + IC</td><td style="padding:.5rem .7rem;color:var(--mid)">Minimum AUM typically $500M&ndash;$1B+; governance complexity</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Large Public Pension (Europe)</td><td style="padding:.5rem .7rem;color:var(--mid)">$25&ndash;150M+</td><td style="padding:.5rem .7rem;color:var(--mid)">Low</td><td style="padding:.5rem .7rem;color:var(--mid)">Consultant or direct; often mandate-based</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD + IC</td><td style="padding:.5rem .7rem;color:var(--mid)">Regulatory constraints; AIFMD compliance required</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Mid-Sized Pension (US/EU)</td><td style="padding:.5rem .7rem;color:var(--mid)">$10&ndash;50M</td><td style="padding:.5rem .7rem;color:var(--mid)">Low&ndash;Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct or via emerging manager programme</td><td style="padding:.5rem .7rem;color:var(--mid)">Moderate ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Long decision timelines; may have emerging manager carve-outs</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Corporate/Private Pension</td><td style="padding:.5rem .7rem;color:var(--mid)">$5&ndash;25M</td><td style="padding:.5rem .7rem;color:var(--mid)">Low&ndash;Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct or consultant</td><td style="padding:.5rem .7rem;color:var(--mid)">Moderate ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Liability-driven focus; preference for liquid strategies</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">University Endowment (large)</td><td style="padding:.5rem .7rem;color:var(--mid)">$10&ndash;50M</td><td style="padding:.5rem .7rem;color:var(--mid)">Low&ndash;Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct; long-term orientation</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">High bar on track record; Yale/Harvard model dominates</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">University Endowment (small)</td><td style="padding:.5rem .7rem;color:var(--mid)">$2&ndash;10M</td><td style="padding:.5rem .7rem;color:var(--mid)">Medium&ndash;High</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct; more flexible</td><td style="padding:.5rem .7rem;color:var(--mid)">Light&ndash;Moderate ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Limited internal resource; can move faster</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Foundation / Charitable</td><td style="padding:.5rem .7rem;color:var(--mid)">$5&ndash;25M</td><td style="padding:.5rem .7rem;color:var(--mid)">Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct or consultant</td><td style="padding:.5rem .7rem;color:var(--mid)">Moderate ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">ESG sensitivity increasing; perpetual capital mandate</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Sovereign Wealth Fund</td><td style="padding:.5rem .7rem;color:var(--mid)">$50&ndash;500M+</td><td style="padding:.5rem .7rem;color:var(--mid)">Very Low</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct; dedicated allocation team</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD + political scrutiny</td><td style="padding:.5rem .7rem;color:var(--mid)">Minimum AUM and track record requirements are very high</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Fund-of-Funds</td><td style="padding:.5rem .7rem;color:var(--mid)">$5&ndash;25M</td><td style="padding:.5rem .7rem;color:var(--mid)">High</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct; emerging manager mandate common</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Fee-on-fee structure; declining industry AUM; but can anchor</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Family Office (single)</td><td style="padding:.5rem .7rem;color:var(--mid)">$2&ndash;25M</td><td style="padding:.5rem .7rem;color:var(--mid)">High</td><td style="padding:.5rem .7rem;color:var(--mid)">Relationship-driven; direct</td><td style="padding:.5rem .7rem;color:var(--mid)">Light&ndash;Moderate</td><td style="padding:.5rem .7rem;color:var(--mid)">Principal decision-making; less process; quicker but unpredictable</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Family Office (multi)</td><td style="padding:.5rem .7rem;color:var(--mid)">$5&ndash;50M</td><td style="padding:.5rem .7rem;color:var(--mid)">Medium&ndash;High</td><td style="padding:.5rem .7rem;color:var(--mid)">Direct or consultant</td><td style="padding:.5rem .7rem;color:var(--mid)">Moderate ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Institutional overlay being applied more frequently</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Private Bank / Wealth Manager</td><td style="padding:.5rem .7rem;color:var(--mid)">$5&ndash;25M</td><td style="padding:.5rem .7rem;color:var(--mid)">Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Platform approval required; structured product often</td><td style="padding:.5rem .7rem;color:var(--mid)">Moderate</td><td style="padding:.5rem .7rem;color:var(--mid)">Platform due diligence adds layer; suitability constraints</td></tr>
+          <tr><td style="padding:.5rem .7rem;color:var(--dark);font-weight:500">Insurance Companies</td><td style="padding:.5rem .7rem;color:var(--mid)">$10&ndash;50M</td><td style="padding:.5rem .7rem;color:var(--mid)">Low&ndash;Medium</td><td style="padding:.5rem .7rem;color:var(--mid)">Consultant or direct; capital treatment matters</td><td style="padding:.5rem .7rem;color:var(--mid)">Full ODD</td><td style="padding:.5rem .7rem;color:var(--mid)">Solvency II / RBC constraints; preference for liquid, low-vol strategies</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">3.3 &nbsp;Realistic Emerging Manager Access Priorities</h2>
+    <p>For an emerging hedge fund (sub-$500M AUM, less than 3-year live track record), the realistic institutional LP access hierarchy is:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li><strong>Tier 1 &mdash; Primary targets:</strong> Family offices (single and multi), smaller endowments, fund-of-funds with emerging manager mandates. Fastest decisions, most flexible on track record, relationship-driven access.</li>
+      <li><strong>Tier 2 &mdash; Medium-term targets:</strong> Mid-sized pensions with emerging manager carve-outs, foundations, private banks (platform approval permitting). Longer timelines but reachable with a 12&ndash;24 month track record and institutional infrastructure.</li>
+      <li><strong>Tier 3 &mdash; Longer-term targets:</strong> Large pension plans, sovereign wealth funds, large endowments. Typically require $500M+ AUM, 3+ year audited track record, and full institutional infrastructure. Treat as a 3&ndash;5 year aspiration.</li>
+    </ul>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">3.4 &nbsp;Manager Discovery Channels</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Channel</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Description</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Relevance to Emerging Managers</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Prime Broker Cap Intro</td><td style="padding:.55rem .9rem;color:var(--mid)">PB teams introduce managers to their allocator networks. Larger PBs (Goldman, Morgan Stanley, JPMorgan, UBS) have extensive networks but prioritise larger managers. Tier 2 PBs (Jefferies, Cowen, Canaccord) are more accessible to sub-$250M funds.</td><td style="padding:.55rem .9rem;color:var(--mid)">High &mdash; often the first institutional introduction channel</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">AIMA / MFA Conferences</td><td style="padding:.55rem .9rem;color:var(--mid)">Industry events (AIMA Global Policy Forum, MFA Network, Context Summits, iConnections) where managers and allocators engage. Networking-driven, not mandate-specific.</td><td style="padding:.55rem .9rem;color:var(--mid)">Medium &mdash; relationship building; rarely produces direct allocations</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Capital Introduction Events</td><td style="padding:.55rem .9rem;color:var(--mid)">Dedicated investor days hosted by PBs or placement agents. Often tiered by fund size.</td><td style="padding:.55rem .9rem;color:var(--mid)">Medium &mdash; requires PB relationship</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Placement Agents</td><td style="padding:.55rem .9rem;color:var(--mid)">Third-party IR firms (Eaton Partners, Park Hill, Rede Partners) that access allocator networks on a fee basis. Cost: typically 2&ndash;5% of capital raised. Selective; reluctant to take on sub-$100M managers.</td><td style="padding:.55rem .9rem;color:var(--mid)">Medium &mdash; useful for US/EU cross-border access if track record is sufficient</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Seeder / Accelerator Platforms</td><td style="padding:.55rem .9rem;color:var(--mid)">Platforms (Leucadia, Paladin, Reservoir) that provide seed capital in exchange for equity or economics, alongside access to their allocator network. Reduces capital-raising burden but involves significant economic give-up.</td><td style="padding:.55rem .9rem;color:var(--mid)">High for sub-$100M &mdash; anchor capital and credibility signal</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Allocator Databases</td><td style="padding:.55rem .9rem;color:var(--mid)">Commercial databases (eVestment, Preqin, Altss, Dakota) used by allocators to screen managers. Presence is a prerequisite; not a sufficient condition.</td><td style="padding:.55rem .9rem;color:var(--mid)">Medium &mdash; visibility tool; not a direct access channel</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500;white-space:nowrap">Direct Outreach / Referrals</td><td style="padding:.55rem .9rem;color:var(--mid)">Cold outreach is ineffective at institutional level. Warm referrals from known service providers, co-investors, or prior employer networks are the primary early-stage entry point.</td><td style="padding:.55rem .9rem;color:var(--mid)">High &mdash; relationship capital is the primary currency at launch</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Source basis: Alternative Fund Insight Power25 allocator data (December 2025); Barclays Hedge Fund Outlook 2025; SVB LP Landscape analysis; Altss pension LP database overview (February 2026); The Hedge Fund Journal pension investor analysis.</p>
+
+    <h2>Section 4: Institutional-Readiness Checklist</h2>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.1 &nbsp;How to Use This Checklist</h2>
+    <p>The checklist below covers the infrastructure, governance, compliance, and investor materials a fund must have in place to credibly engage institutional LPs. Items are rated by criticality: <strong>Critical</strong> (absence is typically a veto or automatic disqualification), <strong>Important</strong> (absence creates material friction or delays), and <strong>Foundational</strong> (expected as baseline; absence signals immaturity).</p>
+    <p>The distinction between established and emerging manager expectations is addressed in Section 5. This checklist reflects the universal baseline &mdash; the minimum required regardless of fund size or vintage.</p>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.2 &nbsp;Legal &amp; Fund Structure</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Master-feeder structure (or equivalent)</td><td style="padding:.55rem .9rem;color:var(--mid)">Offshore feeder (Cayman) for non-US / tax-exempt investors; onshore feeder for US taxable investors. Standalone acceptable for single LP type but limits LP universe.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Offering memorandum &mdash; current and complete</td><td style="padding:.55rem .9rem;color:var(--mid)">Reflects actual strategy, terms, and risk factors. Any material change requires update.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">LPA/subscription docs reviewed by independent counsel</td><td style="padding:.55rem .9rem;color:var(--mid)">Standard market terms; any deviations from market norms require explicit LP disclosure.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Side letter register maintained</td><td style="padding:.55rem .9rem;color:var(--mid)">Full register of all side letters; LPs typically request disclosure of MFN terms.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Regulatory registration in place</td><td style="padding:.55rem .9rem;color:var(--mid)">Form ADV (SEC, if &gt;$100M AUM) or exempt reporting adviser filing (US); FCA authorisation or AIFMD registration (UK/EU). Confirm with legal counsel based on strategy and LP geography.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">AIFMD / NPPR compliance (EU distribution)</td><td style="padding:.55rem .9rem;color:var(--mid)">Non-EU managers distributing to EU professional investors require NPPR filing in each target jurisdiction or appointment of an AIFMD-compliant AIFM.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical if targeting EU LPs</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Insurance: D&amp;O, E&amp;O, cyber</td><td style="padding:.55rem .9rem;color:var(--mid)">Directors &amp; Officers, Errors &amp; Omissions, and cyber liability insurance. Minimum limits vary; allocators will request evidence of coverage.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.3 &nbsp;Service Providers</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Institutional-grade fund administrator</td><td style="padding:.55rem .9rem;color:var(--mid)">Must be independent, experienced in hedge fund administration, and have a recognised name. Self-administration is a near-automatic ODD veto. Examples: Apex, SS&amp;C, Citco, NAV Consulting, Mitsubishi UFJ.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Prime broker(s)</td><td style="padding:.55rem .9rem;color:var(--mid)">Recognised, financially stable PB. Emerging managers typically start with one PB; multiple PBs expected above ~$250M AUM. PB selection affects cap intro access.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Auditor &mdash; PCAOB-registered</td><td style="padding:.55rem .9rem;color:var(--mid)">Big Four or recognised mid-tier with hedge fund experience (Deloitte, EY, KPMG, PwC; or Cohen &amp; Company, Anchin for smaller funds). First audit must be completed within 120 days of fiscal year end.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Legal counsel &mdash; fund formation and ongoing</td><td style="padding:.55rem .9rem;color:var(--mid)">Recognised firm with hedge fund experience for fund documents, regulatory filings, and ongoing counsel.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Compliance consultant / CCO</td><td style="padding:.55rem .9rem;color:var(--mid)">For smaller funds: third-party compliance support acceptable if CCO role is clearly designated. CCO must not report to PM/CIO.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Custodian (where applicable)</td><td style="padding:.55rem .9rem;color:var(--mid)">Required for certain fund types and LP mandates (some ERISA investors require qualified custodian). Confirm with counsel.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Independent technology / OMS-PMS</td><td style="padding:.55rem .9rem;color:var(--mid)">Recognised portfolio management and order management system. Manual or spreadsheet-based tracking is a flag for sub-institutional operations.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.4 &nbsp;Operations &amp; Controls</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Documented NAV calculation process</td><td style="padding:.55rem .9rem;color:var(--mid)">Written procedures covering pricing sources, administrator workflow, sign-off authority, and timeline.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Formal valuation policy</td><td style="padding:.55rem .9rem;color:var(--mid)">Pricing hierarchy for each asset class (including Level 2/3 treatment). Independent pricing sources documented. Valuation committee or equivalent if fund holds illiquid assets.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Reconciliation procedures</td><td style="padding:.55rem .9rem;color:var(--mid)">Daily cash and position reconciliation with prime broker(s) and administrator. Documented procedures and sign-off protocol.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Trade error and breach log</td><td style="padding:.55rem .9rem;color:var(--mid)">Documented log of all errors, limit breaches, and near-misses. Escalation and resolution procedures. A clean log signals poor detection, not clean operations.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Business continuity plan (BCP)</td><td style="padding:.55rem .9rem;color:var(--mid)">Documented BCP covering key scenarios (technology failure, key-person absence, office inaccessibility). Tested at least annually.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Cybersecurity framework</td><td style="padding:.55rem .9rem;color:var(--mid)">Documented policy covering access controls, encryption, incident response. Annual penetration testing. SEC cybersecurity rules (2024) and FCA guidance apply.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Separation of duties</td><td style="padding:.55rem .9rem;color:var(--mid)">No single person controls trade execution AND reconciliation AND cash movement. Minimum staffing for adequate segregation.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Data room / document management</td><td style="padding:.55rem .9rem;color:var(--mid)">Organised, current, and indexed data room available for LP due diligence. Reduces friction and signals operational discipline.</td><td style="padding:.55rem .9rem"><span style="color:var(--muted);font-weight:600;font-size:.78rem">Foundational</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.5 &nbsp;Compliance &amp; Regulatory</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Compliance manual &mdash; current</td><td style="padding:.55rem .9rem;color:var(--mid)">Covers all applicable regulations; reviewed and updated at least annually. CCO sign-off required.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Personal account dealing policy</td><td style="padding:.55rem .9rem;color:var(--mid)">Documented pre-clearance and reporting requirements for all investment personnel.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">AML/KYC procedures</td><td style="padding:.55rem .9rem;color:var(--mid)">Written procedures compliant with applicable jurisdiction. Administrator typically owns LP-level KYC, but manager must have an oversight framework.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Regulatory filing obligations met</td><td style="padding:.55rem .9rem;color:var(--mid)">Form ADV (annual update), Form PF (if applicable), CFTC (if CPO/CTA), AIFMD Annex IV, FCA returns. Calendar managed to avoid lapses.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Conflicts of interest policy</td><td style="padding:.55rem .9rem;color:var(--mid)">Documented identification and management of conflicts (related-party transactions, outside business activities, allocation policy).</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Marketing compliance review</td><td style="padding:.55rem .9rem;color:var(--mid)">All materials reviewed for compliance with applicable advertising rules (SEC Marketing Rule 2021; FCA COBS). Track record presentation must comply.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Off-channel communication policy</td><td style="padding:.55rem .9rem;color:var(--mid)">Following SEC enforcement focus: documented policy on use of personal devices and messaging apps for business communications.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.6 &nbsp;Risk Management</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Risk limits &mdash; documented and monitored</td><td style="padding:.55rem .9rem;color:var(--mid)">Formal risk limits (gross/net exposure, VaR, concentration, sector, liquidity). Monitored daily. Limit breach escalation protocol documented.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Independent risk function (at scale)</td><td style="padding:.55rem .9rem;color:var(--mid)">For emerging managers: risk oversight by COO or designated risk officer acceptable. At $250M+, dedicated risk hire expected. Full independence from PM function is the institutional standard.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Stress testing / scenario analysis</td><td style="padding:.55rem .9rem;color:var(--mid)">Regular stress tests across key market scenarios. Documented methodology and results available for allocator review.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Liquidity risk management</td><td style="padding:.55rem .9rem;color:var(--mid)">Portfolio liquidity analysis versus redemption terms. Side pocket policy documented if any illiquid assets held.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Counterparty risk monitoring</td><td style="padding:.55rem .9rem;color:var(--mid)">PB and counterparty exposure tracked. Margin and collateral management procedures documented.</td><td style="padding:.55rem .9rem"><span style="color:var(--muted);font-weight:600;font-size:.78rem">Foundational</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">4.7 &nbsp;Investor Materials &amp; Reporting</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Item</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Detail</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500;white-space:nowrap">Criticality</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Pitch deck / investor presentation</td><td style="padding:.55rem .9rem;color:var(--mid)">Strategy, team, track record, risk management, and operational overview. Must be consistent with DDQ and ADV.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Audited financial statements</td><td style="padding:.55rem .9rem;color:var(--mid)">First full-year audit completed and available. Sub-$50M funds sometimes receive pushback on this timeline, but absence delays all institutional processes.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Monthly investor letters</td><td style="padding:.55rem .9rem;color:var(--mid)">Performance attribution, market commentary, portfolio updates. Published consistently and on time.</td><td style="padding:.55rem .9rem"><span style="color:#d4a017;font-weight:600;font-size:.78rem">Important</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Monthly NAV statements</td><td style="padding:.55rem .9rem;color:var(--mid)">Independently calculated by administrator. Delivered within agreed timeline post month-end.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">DDQ &mdash; current AIMA-based template</td><td style="padding:.55rem .9rem;color:var(--mid)">Maintained, current, and reviewed at least annually. Functional sign-off from risk, compliance, and operations.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Track record &mdash; compliant presentation</td><td style="padding:.55rem .9rem;color:var(--mid)">Performance presented net of all fees, with drawdown data. GIPS compliance desirable but not universally required at emerging manager stage.</td><td style="padding:.55rem .9rem"><span style="color:#c0392b;font-weight:600;font-size:.78rem">Critical</span></td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Capital introduction / IR materials</td><td style="padding:.55rem .9rem;color:var(--mid)">Professionally produced. Consistent in all representations. Logo, contact details, and disclosures current.</td><td style="padding:.55rem .9rem"><span style="color:var(--muted);font-weight:600;font-size:.78rem">Foundational</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Source basis: Business Money hedge fund launch checklist 2026; Cartesian FinOp hedge fund checklist (September 2025); SEC Form PF amendments (effective March 2025); SEC cybersecurity rules (2024); FCA COBS marketing guidance; PCAOB audit requirements.</p>
+
+    <h2>Section 5: Emerging vs. Established Managers &mdash; Where the Bar Differs</h2>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">5.1 &nbsp;Framing</h2>
+    <p>For the purposes of this section, an emerging manager is defined as a fund with AUM below $500M and/or a live track record of fewer than three years. The term is used descriptively, not pejoratively: many institutional allocators run dedicated emerging manager programmes precisely because early-stage allocation historically generates the strongest risk-adjusted returns.</p>
+    <p>The critical insight is that the bar for non-negotiable infrastructure items is the same regardless of fund size. Valuation independence, compliance programme adequacy, auditor quality, and governance documentation are not scaled to AUM. Where emerging managers receive accommodation, it is on the quantitative thresholds (AUM minimums, track record length) &mdash; not on control quality.</p>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">5.2 &nbsp;Comparative Standards Table</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.82rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .8rem;text-align:left;font-weight:500">Dimension</th>
+          <th style="padding:.6rem .8rem;text-align:left;font-weight:500">Established Manager ($500M+, 3+ years)</th>
+          <th style="padding:.6rem .8rem;text-align:left;font-weight:500">Emerging Manager (sub-$500M, &lt;3 years)</th>
+          <th style="padding:.6rem .8rem;text-align:left;font-weight:500;white-space:nowrap">Accommodation?</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">AUM minimum</td><td style="padding:.5rem .8rem;color:var(--mid)">No minimum issue; size is an advantage</td><td style="padding:.5rem .8rem;color:var(--mid)">Hard AUM floors at most large LPs ($250M&ndash;$1B+)</td><td style="padding:.5rem .8rem;color:#27ae60;font-weight:600;font-size:.78rem">Yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Track record</td><td style="padding:.5rem .8rem;color:var(--mid)">3+ year audited track record expected as standard</td><td style="padding:.5rem .8rem;color:var(--mid)">Often 12&ndash;24 months live; may include pre-fund track record</td><td style="padding:.5rem .8rem;color:#27ae60;font-weight:600;font-size:.78rem">Yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Team depth</td><td style="padding:.5rem .8rem;color:var(--mid)">Dedicated CIO, COO, CFO, CCO, risk officer expected</td><td style="padding:.5rem .8rem;color:var(--mid)">Lean team acceptable; outsourced functions permissible</td><td style="padding:.5rem .8rem;color:#27ae60;font-weight:600;font-size:.78rem">Yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Valuation independence</td><td style="padding:.5rem .8rem;color:var(--mid)">Full independence; valuation committee; independent pricing</td><td style="padding:.5rem .8rem;color:var(--mid)">Same standard. No accommodation on this dimension.</td><td style="padding:.5rem .8rem;color:#c0392b;font-weight:600;font-size:.78rem">No</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Fund administration</td><td style="padding:.5rem .8rem;color:var(--mid)">Institutional-grade, recognised administrator</td><td style="padding:.5rem .8rem;color:var(--mid)">Same standard. Self-administration vetoes regardless of AUM.</td><td style="padding:.5rem .8rem;color:#c0392b;font-weight:600;font-size:.78rem">No</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Auditor quality</td><td style="padding:.5rem .8rem;color:var(--mid)">Big Four or recognised specialist; PCAOB registration</td><td style="padding:.5rem .8rem;color:var(--mid)">Same standard. Audit firm name matters.</td><td style="padding:.5rem .8rem;color:#c0392b;font-weight:600;font-size:.78rem">No</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Compliance programme</td><td style="padding:.5rem .8rem;color:var(--mid)">Dedicated CCO (typically internal); comprehensive manual</td><td style="padding:.5rem .8rem;color:var(--mid)">Outsourced CCO acceptable if properly designated and independent</td><td style="padding:.5rem .8rem;color:#d4a017;font-weight:600;font-size:.78rem">Partial</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">ODD depth</td><td style="padding:.5rem .8rem;color:var(--mid)">Full ODD; multiple onsite visits; annual re-review</td><td style="padding:.5rem .8rem;color:var(--mid)">Full ODD still expected; some allocators apply lighter ODD for sub-$50M first allocation</td><td style="padding:.5rem .8rem;color:#d4a017;font-weight:600;font-size:.78rem">Partial</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Risk infrastructure</td><td style="padding:.5rem .8rem;color:var(--mid)">Dedicated risk function; independent of PM</td><td style="padding:.5rem .8rem;color:var(--mid)">Risk oversight by COO or designated officer acceptable</td><td style="padding:.5rem .8rem;color:#27ae60;font-weight:600;font-size:.78rem">Yes</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">Investor reporting</td><td style="padding:.5rem .8rem;color:var(--mid)">Monthly letters, full attribution, GIPS compliance</td><td style="padding:.5rem .8rem;color:var(--mid)">Monthly letters expected; GIPS desirable but not always required</td><td style="padding:.5rem .8rem;color:#d4a017;font-weight:600;font-size:.78rem">Partial</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">LP access</td><td style="padding:.5rem .8rem;color:var(--mid)">Full institutional universe available</td><td style="padding:.5rem .8rem;color:var(--mid)">Primarily FOFs, family offices, smaller endowments, selected pensions via emerging manager programmes</td><td style="padding:.5rem .8rem;color:var(--muted);font-weight:600;font-size:.78rem">Structural</td></tr>
+          <tr><td style="padding:.5rem .8rem;color:var(--dark);font-weight:500">DDQ quality</td><td style="padding:.5rem .8rem;color:var(--mid)">Comprehensive; fully cross-referenced; institutional IR team</td><td style="padding:.5rem .8rem;color:var(--mid)">Same content standard expected; execution may be leaner</td><td style="padding:.5rem .8rem;color:#c0392b;font-weight:600;font-size:.78rem">No</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">5.3 &nbsp;The Emerging Manager Opportunity: Where Accommodation Matters Most</h2>
+    <p>The most commercially significant accommodations for emerging managers are:</p>
+    <ul style="margin:.5rem 0 1rem 1.5rem;color:var(--mid);font-size:.95rem;line-height:1.8">
+      <li><strong>Emerging manager programmes</strong> &mdash; select pension plans (CalPERS, Illinois Teachers, New York Common, and European equivalents) run dedicated programmes with lower AUM floors and shorter track record requirements. These are high-value targets for emerging managers with institutional pedigree.</li>
+      <li><strong>Fund-of-funds anchoring</strong> &mdash; FOFs with emerging manager mandates can provide first institutional capital and act as a credibility signal to subsequent allocators. The economic terms are higher cost (fee on fee), but the validation effect is real.</li>
+      <li><strong>Seeder capital</strong> &mdash; Seeding platforms provide launch capital and access to allocator networks. The trade-off is economic (revenue share or equity stake). For managers without institutional pedigree, this is often the most direct path to credibility.</li>
+      <li><strong>Family office capital</strong> &mdash; Single and multi-family offices are the most accessible institutional-adjacent LP type. They move faster, apply lighter ODD, and are more willing to back emerging talent. The risk is concentration of LP base and less predictable long-term commitment.</li>
+    </ul>
+
+    <h2 style="font-size:1.05rem;margin-top:1.5rem">5.4 &nbsp;Common Mistakes Made by Emerging Managers</h2>
+    <div style="overflow-x:auto;margin:1rem 0">
+      <table style="width:100%;border-collapse:collapse;font-size:.84rem">
+        <thead><tr style="background:var(--blue);color:#fff">
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Mistake</th>
+          <th style="padding:.6rem .9rem;text-align:left;font-weight:500">Why It Is Costly</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Launching with a sub-institutional administrator to reduce costs</td><td style="padding:.55rem .9rem;color:var(--mid)">The first ODD review will veto the fund. The cost saving is destroyed by lost allocations and the cost of switching providers later.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Using the founding PM's personal track record without proper attribution documentation</td><td style="padding:.55rem .9rem;color:var(--mid)">Institutional LPs and ODD teams will assess whether the track record is attributable to the individual or to the institution. Undocumented attribution fails this test.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Treating compliance as a later-stage build</td><td style="padding:.55rem .9rem;color:var(--mid)">Compliance programme gaps discovered during ODD are not fixable in-process. They require remediating and re-running ODD, typically losing the allocation.</td></tr>
+          <tr style="border-bottom:1px solid var(--border);background:var(--blue-tint)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Approaching large pensions at launch</td><td style="padding:.55rem .9rem;color:var(--mid)">Wasted time and reputational cost. A failed interaction with a large LP early in a fund's life can close that relationship for years. Sequence LP engagement by realistic accessibility.</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Producing a DDQ that is inconsistent with the pitch deck or ADV</td><td style="padding:.55rem .9rem;color:var(--mid)">LPs cross-reference all materials. Inconsistencies are recorded silently and weigh against the fund without the manager being given the opportunity to explain.</td></tr>
+          <tr><td style="padding:.55rem .9rem;color:var(--dark);font-weight:500">Over-relying on the founding team's network without building institutional IR materials</td><td style="padding:.55rem .9rem;color:var(--mid)">Relationship capital is the entry point; institutional materials are the conversion mechanism. Personal relationships open doors; a weak DDQ or absent compliance programme closes them.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-style:italic;font-size:.85rem;color:var(--muted);border:1px solid var(--border);padding:.8rem 1rem;background:var(--blue-tint)">Source basis: Business Money hedge fund launch checklist 2026; SVB LP landscape analysis; Altss pension fund LP overview (February 2026); perfORM ODD therapy service description; Collateral Partners DDQ best practices; AIMA emerging manager resources; industry practice.</p>
+
+    <p style="margin-top:2rem;padding-top:1.2rem;border-top:1px solid var(--border);font-size:.8rem;color:var(--muted);font-style:italic">Prepared by DB Strategic Advisory &mdash; April 2026. This document is prepared for advisory and reference purposes. It does not constitute legal, regulatory, or investment advice. Specific regulatory requirements should be verified with qualified legal counsel in the applicable jurisdiction.</p>
+  </div>
+</div>
+</div>
+
 <!— MODALS - FULL UNTRUNCATED TEXT —>
 <div class="art-modal" id="modal-gov">
 <div class="am-box">
