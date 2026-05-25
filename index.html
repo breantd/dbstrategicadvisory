@@ -1675,29 +1675,30 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
   </div>
 </footer>
 <script>
-// GATE — set GATE_ENABLED to true to take the site offline for maintenance,
-//        set it to false to make the site publicly accessible.
+// GATE — to take site offline: set GATE_ENABLED = true
+//        to make site live:    set GATE_ENABLED = false
 var GATE_ENABLED = true;
 var PW = 'dbsa2025';
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+  var gate = document.getElementById('gate');
   if (!GATE_ENABLED) {
-    document.getElementById('gate').style.display = 'none';
-  } else {
-    document.body.style.overflow = 'hidden';
-    document.getElementById('gate-btn').addEventListener('click', function() {
-      if (document.getElementById('gate-pw').value === PW) {
-        document.getElementById('gate').style.display = 'none';
-        document.body.style.overflow = '';
-      } else {
-        document.getElementById('gate-err').textContent = 'Incorrect access code.';
-        document.getElementById('gate-pw').value = '';
-      }
-    });
-    document.getElementById('gate-pw').addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') document.getElementById('gate-btn').click();
-    });
+    gate.style.display = 'none';
+    return;
   }
-});
+  document.body.style.overflow = 'hidden';
+  document.getElementById('gate-btn').addEventListener('click', function() {
+    if (document.getElementById('gate-pw').value === PW) {
+      gate.style.display = 'none';
+      document.body.style.overflow = '';
+    } else {
+      document.getElementById('gate-err').textContent = 'Incorrect access code.';
+      document.getElementById('gate-pw').value = '';
+    }
+  });
+  document.getElementById('gate-pw').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('gate-btn').click();
+  });
+})();
 
 // NAV SCROLL
 window.addEventListener('scroll', function() {
