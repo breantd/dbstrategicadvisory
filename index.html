@@ -1675,27 +1675,29 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
   </div>
 </footer>
 <script>
-// GATE — set GATE_ENABLED to false to make the site publicly accessible,
-//        set it back to true when you need to take the site offline for maintenance.
+// GATE — set GATE_ENABLED to true to take the site offline for maintenance,
+//        set it to false to make the site publicly accessible.
 var GATE_ENABLED = false;
 var PW = 'dbsa2025';
-if (GATE_ENABLED) {
-  document.body.style.overflow = 'hidden';
-  document.getElementById('gate-btn').addEventListener('click', function() {
-    if (document.getElementById('gate-pw').value === PW) {
-      document.getElementById('gate').style.display = 'none';
-      document.body.style.overflow = '';
-    } else {
-      document.getElementById('gate-err').textContent = 'Incorrect access code.';
-      document.getElementById('gate-pw').value = '';
-    }
-  });
-  document.getElementById('gate-pw').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') document.getElementById('gate-btn').click();
-  });
-} else {
-  document.getElementById('gate').style.display = 'none';
-}
+document.addEventListener('DOMContentLoaded', function() {
+  if (!GATE_ENABLED) {
+    document.getElementById('gate').style.display = 'none';
+  } else {
+    document.body.style.overflow = 'hidden';
+    document.getElementById('gate-btn').addEventListener('click', function() {
+      if (document.getElementById('gate-pw').value === PW) {
+        document.getElementById('gate').style.display = 'none';
+        document.body.style.overflow = '';
+      } else {
+        document.getElementById('gate-err').textContent = 'Incorrect access code.';
+        document.getElementById('gate-pw').value = '';
+      }
+    });
+    document.getElementById('gate-pw').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') document.getElementById('gate-btn').click();
+    });
+  }
+});
 
 // NAV SCROLL
 window.addEventListener('scroll', function() {
