@@ -861,6 +861,34 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
   <p class="s-intro">Views on governance, finance, AI, and institutional leadership &mdash; written from thirty years at the intersection of control and commercial reality.</p>
 </div>
 <div class="art-grid fade">
+  <div class="art-card" onclick="openArt('georisk')">
+    <div class="art-img-wrap">
+      <img src="https://images.unsplash.com/photo-1769144256181-698b8f807066?w=600&q=80&fit=crop" alt="Geopolitical Risk Isn't a Macro View. It's a Portfolio Risk." loading="lazy">
+      <div class="art-img-overlay"></div>
+      <span class="art-img-tag">Macro &middot; Geopolitical Risk</span>
+    </div>
+    <div class="art-top">
+      <div class="art-date">August 2026</div>
+      <h3 class="art-title">Geopolitical Risk Isn&rsquo;t a Macro View. It&rsquo;s a Portfolio Risk.</h3>
+      <p class="art-exc">Sanctions compliance and a scenario deck are genuinely valuable. Both are also built to track risks that are already visible &mdash; not to catch the ones that aren&rsquo;t yet on anyone&rsquo;s list.</p>
+    </div>
+    <div class="art-foot"><a href="#" class="art-read" onclick="event.preventDefault();openArt('georisk')">Read Article</a><span class="art-fmt">Article</span></div>
+  </div>
+
+  <div class="art-card" onclick="openArt('esghalves')">
+    <div class="art-img-wrap">
+      <img src="https://images.unsplash.com/photo-1527690499469-ef2eff9c6735?w=600&q=80&fit=crop" alt="ESG in Hedge Funds Has Two Halves. Most Firms Only Build One." loading="lazy">
+      <div class="art-img-overlay"></div>
+      <span class="art-img-tag">ESG &middot; Sustainability</span>
+    </div>
+    <div class="art-top">
+      <div class="art-date">August 2026</div>
+      <h3 class="art-title">ESG in Hedge Funds Has Two Halves. Most Firms Only Build One.</h3>
+      <p class="art-exc">A written ESG policy and an exclusion list are real work. They&rsquo;re also only half the job &mdash; the half that touches the portfolio is where the effort quietly stops.</p>
+    </div>
+    <div class="art-foot"><a href="#" class="art-read" onclick="event.preventDefault();openArt('esghalves')">Read Article</a><span class="art-fmt">Article</span></div>
+  </div>
+
   <div class="art-card" onclick="openArt('diversity')">
     <div class="art-img-wrap">
       <img src="https://images.unsplash.com/photo-1758691737543-09a1b2b715fa?w=600&q=80&fit=crop" alt="Diversity Isn't a Values Statement -- It's a Performance Driver" loading="lazy">
@@ -1032,6 +1060,45 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 
 </div>
 </section>
+<div class="art-modal" id="modal-georisk">
+<div class="am-box">
+  <div class="am-head"><button class="am-close" onclick="closeArt('georisk')">&#215;</button><span class="am-tag">Macro &middot; Geopolitical Risk &middot; August 2026</span><h2 class="am-title">Geopolitical Risk Isn&rsquo;t a Macro View. It&rsquo;s a Portfolio Risk.</h2></div>
+  <div class="am-body">
+<p>Ask most hedge funds how they manage geopolitical risk, and the answer usually has two parts: sanctions compliance against OFAC and equivalent regimes, and a scenario deck produced by a team of economists. Both are genuinely valuable. Both are also structurally limited in the same way: they&rsquo;re built to track and price risks that are already visible, not to catch the ones that aren&rsquo;t yet on anyone&rsquo;s list. February 2022 is the clearest evidence of why that&rsquo;s not enough.</p>
+<h2>What February 2022 actually showed</h2>
+<p>When Russia invaded Ukraine, the HFRI Emerging Markets: Russia/Eastern Europe Index fell 36.3% in the first two months of the year, as sanctions froze assets, the Russian stock market closed, and the rouble collapsed, a sharp reversal from a gain of over 20% the year before (HFR, 2022). Sanctions regimes existed. Scenario analysis existed. Escalation from troop build-up to full invasion, and the speed and severity of the sanctions response that followed, was not something most risk frameworks had fully priced. That gap between &ldquo;the risk is on the map&rdquo; and &ldquo;the risk is sized correctly in the portfolio&rdquo; is the real problem, and it&rsquo;s one sanctions compliance and conventional scenario work don&rsquo;t close on their own.</p>
+<h2>Economists model paths. They don&rsquo;t spot new fault lines.</h2>
+<p>There&rsquo;s an important distinction between macro economists and geopolitical risk as its own discipline, and most risk functions don&rsquo;t draw it. Economists are very good at taking a known, visible tension (an election, a tariff dispute, a border conflict already under way) and modelling probability-weighted paths from there. What they are structurally less equipped to do is identify a genuinely new source of instability before it has announced itself: a fragmentation line nobody was watching, an escalation pathway that doesn&rsquo;t fit the existing scenario set.</p>
+<p>This isn&rsquo;t a hypothetical gap. It&rsquo;s exactly what a growing part of the industry has started building dedicated capability for, separate from macro research. Lazard runs a standalone Geopolitical Advisory practice, distinct from its economics and markets teams, built specifically to help clients navigate political risk rather than macroeconomic risk. BlackRock&rsquo;s Investment Institute maintains a Geopolitical Risk Dashboard that tracks and scores individual geopolitical risk scenarios on an ongoing basis, treating geopolitics as a category with its own monitoring infrastructure rather than a subset of macro commentary. The IMF&rsquo;s April 2025 Global Financial Stability Report goes further, treating geopolitical risk not as an occasional shock but as a structural feature of financial markets going forward: priced into equity and options markets only partially, with realisation that can spill over into sovereigns and financial institutions well beyond the country where it originates (IMF, 2025). If large asset managers and multilateral institutions are treating this as a distinct discipline requiring its own infrastructure, a hedge fund running concentrated, leveraged positions has at least as much reason to.</p>
+<h2>What a real capability looks like</h2>
+<p>I&rsquo;d build this in three pieces, none of which I&rsquo;d claim is standard practice today. First, dedicated geopolitical risk expertise: someone whose job is specifically to scan for emerging, non-obvious fragmentation, not a macro economist doing this as a sideline. Second, integrate geopolitical stress testing into the existing scenario framework with explicit, regularly updated probability weightings, rather than treating it as a standalone slide deck reviewed once a quarter. Third, translate identified tail scenarios into actual portfolio manager and fund-level limits, so the output is a constraint on position-taking, not just a briefing document. None of this replaces sanctions compliance or macro research. It sits alongside them, covering the specific gap they don&rsquo;t.</p>
+<h2>Where this leaves the argument</h2>
+<p>The instinct to treat geopolitical risk as background context, something the macro team keeps an eye on, made sense when major geopolitical shocks were rare and slow-moving. The IMF&rsquo;s own framing suggests that assumption no longer holds. A fund that builds genuine forward-looking geopolitical capability isn&rsquo;t just protecting itself against the next Ukraine-scale shock. It&rsquo;s demonstrating, to the institutional investors increasingly asking the question, that its risk infrastructure is built for the environment it&rsquo;s actually operating in, not the one that existed a decade ago.</p>
+  </div>
+</div>
+</div>
+<div class="art-modal" id="modal-esghalves">
+<div class="am-box">
+  <div class="am-head"><button class="am-close" onclick="closeArt('esghalves')">&#215;</button><span class="am-tag">ESG &middot; Sustainability &middot; August 2026</span><h2 class="am-title">ESG in Hedge Funds Has Two Halves. Most Firms Only Build One.</h2></div>
+  <div class="am-body">
+<p>Most hedge funds that take ESG seriously do real work &mdash; but ESG in an investment firm has two distinct halves, and most funds only properly build one. The half most people picture when they hear &ldquo;ESG policy&rdquo; &mdash; governance, culture, documentation &mdash; is genuinely achievable with enough intent. The other half, how the firm actually constructs and manages its portfolio, is where that same effort quietly stops for almost everyone, and it&rsquo;s not because funds don&rsquo;t care. It&rsquo;s because it&rsquo;s genuinely the harder problem to solve.</p>
+<p>The governance half is the one most funds recognise: a documented ESG policy, a DEI policy, staff training, ESG and DEI criteria built into performance reviews, and an exclusion list &mdash; a defined set of sectors or issuers the fund simply won&rsquo;t invest in, commonly arms manufacturing, tobacco or thermal coal. Some funds go further, right at the edge of the investment process itself: a self-imposed restriction on trading a sanctioned or invaded country&rsquo;s securities ahead of formal sanctions taking effect, or a values-aligned allocation to a conflict-affected country&rsquo;s debt. Industry practice around Russia in 2022 showed plenty of managers moving on exposure before OFAC&rsquo;s June 2022 restrictions on secondary-market Russian securities forced the issue. But even those decisions are closer to policy than to portfolio construction. They set boundaries around what can&rsquo;t be traded. They don&rsquo;t offer a framework for how ESG considerations shape sizing, weighting or manager accountability across everything that sits inside those boundaries.</p>
+<p>This pattern &mdash; real boundary-setting, no systematic portfolio integration &mdash; is common across the industry, not unusual. Research into hedge funds&rsquo; ESG practices consistently finds meaningful exclusion and policy work sitting alongside little to no systematic ESG scoring built into how portfolios are actually constructed. That&rsquo;s not a paperwork problem you fix by writing a more complete policy. The portfolio itself remains largely untouched by anything beyond a handful of exclusions, and that&rsquo;s the harder, more interesting problem the industry talks about far less.</p>
+<h2>Why off-the-shelf ESG scoring doesn&rsquo;t fit a hedge fund</h2>
+<p>Conventional ESG scoring was built for long-only managers holding equities and bonds over extended periods. A multi-strategy hedge fund doesn&rsquo;t look like that. It holds derivatives, runs short books, trades index futures and macro instruments, and rotates exposure over days or weeks rather than years. Legacy scoring methodologies weren&rsquo;t designed for any of that, and it shows: PRI&rsquo;s own research into hedge funds highlights that assessing ESG risk in the industry runs into problems simply not present in traditional asset classes, given the range of instruments involved and a fund&rsquo;s ability to move opportunistically across strategies. Equity and credit long-short books adapt reasonably well to ESG screening. CTA and discretionary macro strategies, built around index futures, currencies and rates rather than individual company exposure, are a much harder fit &mdash; there often isn&rsquo;t a company-level ESG profile to score in the first place. On top of that, ESG data itself is inconsistent: different providers frequently produce different scores for the same holding, which means two managers running an identical process on different data can land in different places entirely.</p>
+<p>None of this is a reason to give up on the investment half. It&rsquo;s a reason to be honest that it requires real infrastructure, not a subscription to a scoring vendor.</p>
+<h2>The half that&rsquo;s tractable, and the half that isn&rsquo;t</h2>
+<p>Closing the gap, as I&rsquo;d approach it, means treating ESG as two separate projects rather than one. The governance half &mdash; a written policy, staff training, ESG criteria embedded in annual performance reviews with genuine consequences, pursuit of PRI signatory status, a structured framework for answering investor due diligence questionnaires, and yes, exclusion lists &mdash; is the one most funds attempt, at least partially, because it&rsquo;s tractable. It&rsquo;s a governance and culture project, not a technology one.</p>
+<p>The investment half is the one that usually doesn&rsquo;t get built at all: strategy-adjusted ESG scoring applied across the full range of instruments a multi-strategy fund actually holds, not just its long equity book and its exclusion list. In practice that means starting with third-party ESG data as a foundation for the investable universe, then layering in-house adjustments for direction, duration and size &mdash; a short position and a long position in the same name are not the same ESG exposure, and existing vendor tools generally don&rsquo;t make that distinction. It&rsquo;s a genuine technology build, done in phases, with the gaps that remain &mdash; derivative instruments still unscored, strategies not yet covered &mdash; tracked explicitly rather than quietly ignored.</p>
+<p>Only the investment half touches what a hedge fund actually does for a living. The governance half, done well, is real and valuable &mdash; but on its own it&rsquo;s ESG boundary-setting, not ESG integration.</p>
+<h2>The open question no one wants to answer</h2>
+<p>Here&rsquo;s where it gets uncomfortable. Portfolio manager compensation at hedge funds is typically contractual, tied to trading profit. If a fund builds a genuinely sophisticated ESG scoring system and it never touches the metric portfolio managers are actually optimising for, how much has really changed? A scoring framework that lives in a risk report but never reaches compensation risks becoming exactly the kind of cosmetic exercise the investment half was supposed to move beyond.</p>
+<p>The obvious next step &mdash; tying part of PM compensation to portfolio-level ESG scores, with upside for strong scores and a deduction for poor ones &mdash; is not something I&rsquo;d claim is proven or ready to adopt wholesale. I think it&rsquo;s a genuinely open question, not a settled answer. It raises real problems: PMs could optimise for the score rather than the substance, existing contracts would need renegotiation, and the industry has no established practice to point to. I don&rsquo;t think the case against it is obviously right either &mdash; a scoring system with no compensation link is a system nobody outside compliance has much reason to take seriously. I don&rsquo;t have a clean answer. I&rsquo;d rather say that honestly than pretend the industry has settled something it hasn&rsquo;t.</p>
+<h2>Where this leaves the argument</h2>
+<p>ESG that stops at policy, training and exclusions is real work, and it deserves credit &mdash; but it&rsquo;s only half the job. ESG that reaches into portfolio construction &mdash; sizing, weighting and scoring across the full range of instruments a fund holds, and eventually into how portfolio managers are paid &mdash; is the other half, and it&rsquo;s harder, more expensive, and further from resolved than most public statements on the subject suggest. The funds that build both halves will have something real to show investors who are no longer satisfied with a policy and an exclusion list. The funds that stop at the first will have done genuine work &mdash; just half of it.</p>
+  </div>
+</div>
+</div>
 <div class="art-modal" id="modal-diversity">
 <div class="am-box">
   <div class="am-head"><button class="am-close" onclick="closeArt('diversity')">&#215;</button><span class="am-tag">Leadership &middot; Diversity &middot; July 2026</span><h2 class="am-title">Diversity Isn&rsquo;t a Values Statement &mdash; It&rsquo;s a Performance Driver</h2></div>
@@ -2019,7 +2086,7 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 // GATE
 // Set GATE_ENABLED to false to make the site publicly visible.
 // Set GATE_ENABLED to true to require the access code again.
-var GATE_ENABLED = false;
+var GATE_ENABLED = true;
 var PW = 'dbsa2025';
 if (GATE_ENABLED) {
   document.body.style.overflow = 'hidden';
