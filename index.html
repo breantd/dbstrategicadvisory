@@ -861,6 +861,20 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
   <p class="s-intro">Views on governance, finance, AI, and institutional leadership &mdash; written from thirty years at the intersection of control and commercial reality.</p>
 </div>
 <div class="art-grid fade">
+  <div class="art-card" onclick="openArt('culture')">
+    <div class="art-img-wrap">
+      <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&q=80&fit=crop" alt="Importance of Firm Culture as a Driver for Excellence" loading="lazy">
+      <div class="art-img-overlay"></div>
+      <span class="art-img-tag">Leadership &middot; Culture</span>
+    </div>
+    <div class="art-top">
+      <div class="art-date">August 2026</div>
+      <h3 class="art-title">Importance of Firm Culture as a Driver for Excellence</h3>
+      <p class="art-exc">A strong culture isn&rsquo;t a values statement on a wall &mdash; it&rsquo;s a retention strategy, a hiring advantage, and, increasingly, a regulatory and fundraising signal that firms overlook at their own cost.</p>
+    </div>
+    <div class="art-foot"><a href="#" class="art-read" onclick="event.preventDefault();openArt('culture')">Read Article</a><span class="art-fmt">Article</span></div>
+  </div>
+
   <div class="art-card" onclick="openArt('georisk')">
     <div class="art-img-wrap">
       <img src="https://images.unsplash.com/photo-1769144256181-698b8f807066?w=600&q=80&fit=crop" alt="Geopolitical Risk Isn't a Macro View. It's a Portfolio Risk." loading="lazy">
@@ -1060,6 +1074,42 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 
 </div>
 </section>
+<div class="art-modal" id="modal-culture">
+<div class="am-box">
+  <div class="am-head">
+    <button class="am-close" onclick="closeArt('culture')">&#215;</button>
+    <span class="am-tag">Leadership &middot; Culture &middot; August 2026</span>
+    <h2 class="am-title">Importance of Firm Culture as a Driver for Excellence</h2>
+  </div>
+  <div class="am-body">
+
+    <p>Ask most executives whether culture matters, and they&rsquo;ll say yes without hesitation. Ask them to name the mechanism by which it shows up on the P&amp;L, and the answer gets vague fast. I&rsquo;ve spent thirty years watching that mechanism operate directly, twenty years at Goldman Sachs and nearly a decade building Eisler Capital from its first day as CFO and CRO, and I&rsquo;m convinced culture is not a values statement. It&rsquo;s one of the more durable drivers of a firm&rsquo;s performance, provided it&rsquo;s built deliberately rather than assumed.</p>
+
+    <h2>The Benefits of a Strong Culture</h2>
+    <p>Retention is the most direct benefit. A firm with a genuine culture doesn&rsquo;t just pay people to stay. It gives them a reason to. The same logic works in reverse for attraction: as global banks competed aggressively for the same pool of talent, Goldman didn&rsquo;t hire on technical skill alone. It hired people who fit the firm&rsquo;s values, on the logic that someone who genuinely shares what a firm stands for is more likely to commit to it for the long run.</p>
+    <p>I ran that filter myself for years as an interviewer. Technical competence was necessary but never sufficient. The question I kept coming back to was simpler: is this a good cultural fit? What would it actually be like to sit next to this person every day? If the technical box was ticked but the cultural one wasn&rsquo;t, the answer was a clear no, because hiring against culture, even for a strong technical candidate, is a cost the firm keeps paying long after the offer is signed.</p>
+    <p>That instinct isn&rsquo;t just a personal preference. In a 2019 Glassdoor survey of 5,000 job seekers across the US, UK, France and Germany, 77% said they would consider a company&rsquo;s culture before applying, and more than half said culture mattered more to their job satisfaction than salary did. Culture is already doing recruiting work before a firm gets anywhere near the interview stage, or quietly costing it candidates it never sees.</p>
+    <p>Running global teams taught me how deep this goes. I travelled constantly, and one of the things I found genuinely striking was how quickly I&rsquo;d relate to colleagues from completely different countries and backgrounds, not despite the cultural distance but because what we had in common (the firm&rsquo;s values) was so immediately obvious. A well-built culture travels further than geography, language or background, which matters a great deal for any firm operating across jurisdictions.</p>
+
+    <h2>The Business Case Beyond the Office</h2>
+    <p>In asset management specifically, the benefit extends beyond the office. LPs don&rsquo;t just buy a strategy and a governance framework (as I&rsquo;ve written before in &ldquo;Governance Means Business&rdquo; and &ldquo;The 15 Questions That Decide Your Allocation&rdquo;); they buy a story, and a credible one is inseparable from the culture that actually produced it. Exposing a firm&rsquo;s genuine DNA, rather than a polished version of it, can be a real differentiator in raising capital.</p>
+    <p>For regulated firms, culture is no longer only a narrative matter either. The FCA&rsquo;s December 2025 policy statement on non-financial misconduct explicitly folds workplace conduct into the Fit and Proper assessment of senior individuals, from September 2026. For a regulated entity, culture has moved from something investors infer to something a regulator will examine directly.</p>
+    <p>None of this is guesswork. In a survey of 1,348 North American firms by Graham, Harvey, Popadak and Rajgopal, published in the <em>Journal of Financial Economics</em>, more than half of senior executives ranked culture among the top three drivers of firm value, and 92% said improving their culture would increase it. The uncomfortable number in the same study: only 16% believed their current culture was actually where it should be. Knowing culture matters and having built one that works are two very different things.</p>
+
+    <h2>Building It Deliberately: A Three-Step Plan</h2>
+    <p>Closing that gap starts with defining the firm&rsquo;s actual core values, not a generic list borrowed from a template, but whatever genuinely makes up the firm&rsquo;s DNA: technology, meritocracy and fairness, creativity, teamwork, whatever it truly is. It has to be specific to the firm and it has to be genuine, because people can tell the difference between a value that&rsquo;s lived and one that&rsquo;s printed on a poster. Once defined, it needs to become a bold, specific statement rather than a single word. &ldquo;Excellence&rdquo; as a bullet point means nothing. &ldquo;Commitment to Excellence: we strive for the highest standards in everything we do, never settling for mediocrity&rdquo; is something people can actually be held to.</p>
+    <p>The second step is where most culture initiatives quietly fail: turning the statement into action. A value that isn&rsquo;t tested anywhere in how the firm actually operates isn&rsquo;t a value. It&rsquo;s decoration. That means building it into the interview process as an explicit hiring criterion, scoring adherence to it as part of the annual performance review, and running regular training that reinforces it in practice, diversity training being one obvious example, and one I&rsquo;ve written about separately in &ldquo;Diversity Isn&rsquo;t a Values Statement &mdash; It&rsquo;s a Performance Driver.&rdquo; If a value doesn&rsquo;t show up in who gets hired, who gets promoted, and how people are actually developed, it isn&rsquo;t operating.</p>
+    <p>The third step is measurement, and it&rsquo;s the one firms most often skip. If you can&rsquo;t measure adherence, progress, or the outcomes it produces, you haven&rsquo;t actually built anything. You&rsquo;ve written something down. Management will only keep investing in a culture framework it can see delivering, which means demonstrating impact in specific terms: showing how a roadblock got cleared through active collaboration, or how one idea was strengthened because others built on it. Vague claims about &ldquo;good team spirit&rdquo; don&rsquo;t survive a budget conversation. Specific, attributable examples do.</p>
+
+    <h2>It Has to Come From the Top</h2>
+    <p>None of the above works without one precondition: leadership has to live it first. In my experience, culture spreads from the top down, not the other way round: employees follow the example leadership actually sets, not the one it announces. If senior management commits to the firm&rsquo;s values visibly and consistently, the odds of the culture taking hold are good. If it doesn&rsquo;t, employees quickly conclude these are paper values, and the entire exercise collapses.</p>
+    <p>Goldman Sachs is the clearest example I&rsquo;ve lived through. In 1979, John Whitehead, then co-head of the firm, wrote fourteen business principles setting out what Goldman stood for, plain enough that they still define the firm&rsquo;s culture more than four decades later. What made them work wasn&rsquo;t that they were written down. It was that, across my twenty years there, I watched senior leadership actually embody them: living them day to day, quoting them in internal and external speeches, holding themselves to the same standard they expected of everyone else. Junior employees aspire to become leaders, and specifically, to become like the leaders in front of them. Show people that the path to the top runs through the firm&rsquo;s stated values, and they&rsquo;ll walk it. Show them the opposite, and the values become something people recite, not something they do.</p>
+
+    <p>Culture isn&rsquo;t a values statement, and it isn&rsquo;t free. It has to be defined honestly, built into how the firm actually operates, measured like anything else the business invests in, and modelled by the people at the top before anyone else will take it seriously. Done properly, it is one of the more durable drivers of excellence a firm has: it retains people, attracts the ones it hasn&rsquo;t hired yet, and, for firms raising institutional capital or operating under regulatory scrutiny, it increasingly speaks for itself before anyone in the room says a word.</p>
+
+  </div>
+</div>
+</div>
 <div class="art-modal" id="modal-georisk">
 <div class="am-box">
   <div class="am-head"><button class="am-close" onclick="closeArt('georisk')">&#215;</button><span class="am-tag">Macro &middot; Geopolitical Risk &middot; August 2026</span><h2 class="am-title">Geopolitical Risk Isn&rsquo;t a Macro View. It&rsquo;s a Portfolio Risk.</h2></div>
@@ -2086,7 +2136,7 @@ footer{background:var(--blue);padding:2.2rem 7vw;display:flex;align-items:center
 // GATE
 // Set GATE_ENABLED to false to make the site publicly visible.
 // Set GATE_ENABLED to true to require the access code again.
-var GATE_ENABLED = false;
+var GATE_ENABLED = true;
 var PW = 'dbsa2025';
 if (GATE_ENABLED) {
   document.body.style.overflow = 'hidden';
